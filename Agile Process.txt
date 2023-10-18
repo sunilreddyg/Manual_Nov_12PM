@@ -180,6 +180,40 @@ Scrum:-->
 			=> Business Conditions and Special Requirements
 			=> Errors
 
+What is scenarios in Agile?
 
+		=>Scenarios are designed in gherkin language
+		=>It is a plain language which can convert
+			plain text into automation code.
+		=> Each user story may contain set of scenarios
+
+		It contains Given, When, Then, And, and But keywords.
+
+		Given- First scenario step.
+		- It is usually used to describe the initial context.
+		When
+		- It is used to declare events or actions perform by user
+		Then
+		- This keyword is used to declare an expected result or outcome after the when step.
+		And and But
+		- The purpose of these two keywords is to replace Given, When, or Then keywords
+		  when they are used more than once to increase readability.
+
+		
+		Feature: Account Holder withdraws cash
+ 
+		Scenario: Account has sufficient funds
+    			Given The account balance is $100
+      				And the card is valid
+      				And the machine contains enough money
+     			When the Account Holder requests $20
+     			Then the ATM should dispense $20
+     				 And the account balance should be $80
+      			         And the card should be returned
+		
+
+	What is Epic:-->
+		=> Epic is a large reqruiement and 
+			epic contains set of Stories..
 
 
